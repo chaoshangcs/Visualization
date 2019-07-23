@@ -1,0 +1,53 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc11:  <http://purl.org/dc/elements/1.1/> .
+@prefix ex:    <http://nandana.org/example/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:square_sail  a        owl:Class , rdfs:Class ;
+        rdfs:label       "square_sail" ;
+        rdfs:subClassOf  ex:sail .
+
+ex:flying_jib  a         owl:Class , rdfs:Class ;
+        rdfs:label       "flying_jib" ;
+        rdfs:subClassOf  ex:sail .
+
+ex:topsail  a            owl:Class , rdfs:Class ;
+        rdfs:label       "topsail" ;
+        rdfs:subClassOf  ex:sail .
+
+ex:spritsail  a          owl:Class , rdfs:Class ;
+        rdfs:label       "spritsail" ;
+        rdfs:subClassOf  ex:sail .
+
+ex:skysail  a            owl:Class , rdfs:Class ;
+        rdfs:label       "skysail" ;
+        rdfs:subClassOf  ex:royal , ex:sail .
+
+ex:spanker  a            owl:Class , rdfs:Class ;
+        rdfs:label       "spanker" ;
+        rdfs:subClassOf  ex:headsail , ex:sail .
+
+ex:mizzen  a             owl:Class , rdfs:Class ;
+        rdfs:label       "mizzen" ;
+        rdfs:subClassOf  ex:sail .
+
+ex:headsail  a           owl:Class , rdfs:Class ;
+        rdfs:label       "headsail" ;
+        rdfs:subClassOf  ex:jib , ex:sail .
+
+ex:foresail  a           owl:Class , rdfs:Class ;
+        rdfs:label       "foresail" ;
+        rdfs:subClassOf  ex:sail .
+
+ex:staysail  a           owl:Class , rdfs:Class ;
+        rdfs:label       "staysail" ;
+        rdfs:subClassOf  ex:sail .
+
+ex:lateen  a             owl:Class , rdfs:Class ;
+        rdfs:label       "lateen" ;
+        rdfs:subClassOf  ex:sail .
+
+ex:mainsail  a           owl:Class , rdfs:Class ;
+        rdfs:label       "mainsail" ;
+        rdfs:subClassOf  ex:sail .
