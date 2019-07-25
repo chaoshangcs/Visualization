@@ -1,4 +1,3 @@
-@prefix ex: <http://nandana.org/example/ontology/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
