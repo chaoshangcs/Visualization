@@ -2,6 +2,7 @@
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
 @prefix schema: <http://schema.org/> .
+@prefix ex: <http://nandana.org/example/ontology/> .
 
 ex:
   a owl:Ontology ;
