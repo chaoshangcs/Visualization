@@ -56,23 +56,3 @@ ex:works_for
   a rdf:Property, owl:ObjectProperty ;
   rdfs:domain ex:Person;
   rdfs:range ex:Company .
-
-# unfortunately, WebVOWL doesn't show individuals in the graph and I am doing a hack by annotating everything as a class. 
-ex:Alfio_Gliozzo a ex:AI_Researcher, rdfs:Class .
-ex:Faisal_Chowdhury a ex:AI_Researcher, rdfs:Class .
-ex:Sarthak_Dash a ex:AI_Researcher, rdfs:Class .
-ex:Nicolas_Fauceglia a ex:AI_Researcher, rdfs:Class .
-ex:Chao_Shang a ex:AI_Researcher, rdfs:Class . 
-ex:Nandana_Mihindukulasooriya a ex:AI_Researcher, rdfs:Class . 
-
-ex:USA a ex:Country, rdfs:Class .
-ex:SriLanka a ex:Country, rdfs:Class .
-ex:Italy a ex:Country, rdfs:Class .
-ex:India a ex:Country, rdfs:Class .
-ex:Bangladesh a ex:Country, rdfs:Class .
-ex:Argentina a ex:Country, rdfs:Class .
-
-ex:Boston a ex:City, rdfs:Class .
-ex:New_York a ex:City, rdfs:Class .
-ex:Colombo a ex:City, rdfs:Class .
-ex:Madrid a ex:City, rdfs:Class .
