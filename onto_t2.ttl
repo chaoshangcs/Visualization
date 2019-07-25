@@ -1,0 +1,62 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dc11: <http://purl.org/dc/elements/1.1/> .
+@prefix schema: <http://schema.org/> .
+
+ex:
+  a owl:Ontology ;
+  dc11:title "An example ontology" ;
+  dc11:description "A toy example to play with WebOWL" .
+
+ex:Person a rdfs:Class, owl:Class ;
+  rdfs:label "Person";
+  rdfs:subClassOf owl:Thing .
+
+ex:Researcher a rdfs:Class, owl:Class ;
+  rdfs:label "Researcher" ;
+    rdfs:subClassOf ex:Person .
+
+ex:AI_Researcher a rdfs:Class, owl:Class ;
+  rdfs:label "AI_Researcher" ;
+    rdfs:subClassOf ex:Researcher .
+
+ex:Company a rdfs:Class, owl:Class ;
+  rdfs:label "Company" ;
+  rdfs:subClassOf owl:Thing .
+
+ex:TechnologyCompany a rdfs:Class, owl:Class ;
+  rdfs:label "Technology Company" ;
+  rdfs:subClassOf ex:Company .  
+
+ex:Place a rdfs:Class, owl:Class ;
+  rdfs:label "Place" ;
+  rdfs:subClassOf owl:Thing .
+
+ex:Country a rdfs:Class, owl:Class ;
+  rdfs:label "Country" ;
+  rdfs:subClassOf ex:Place .
+
+ex:City a rdfs:Class, owl:Class ;
+  rdfs:label "City" ;
+  rdfs:subClassOf ex:Place .
+
+
+# unfortunately, WebVOWL doesn't show individuals in the graph and I am doing a hack by annotating everything as a class. 
+ex:Alfio_Gliozzo a ex:AI_Researcher, rdfs:Class .
+ex:Faisal_Chowdhury a ex:AI_Researcher, rdfs:Class .
+ex:Sarthak_Dash a ex:AI_Researcher, rdfs:Class .
+ex:Nicolas_Fauceglia a ex:AI_Researcher, rdfs:Class .
+ex:Chao_Shang a ex:AI_Researcher, rdfs:Class . 
+ex:Nandana_Mihindukulasooriya a ex:AI_Researcher, rdfs:Class . 
+
+ex:USA a ex:Country, rdfs:Class .
+ex:SriLanka a ex:Country, rdfs:Class .
+ex:Italy a ex:Country, rdfs:Class .
+ex:India a ex:Country, rdfs:Class .
+ex:Bangladesh a ex:Country, rdfs:Class .
+ex:Argentina a ex:Country, rdfs:Class .
+
+ex:Boston a ex:City, rdfs:Class .
+ex:New_York a ex:City, rdfs:Class .
+ex:Colombo a ex:City, rdfs:Class .
+ex:Madrid a ex:City, rdfs:Class .
