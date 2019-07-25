@@ -40,6 +40,23 @@ ex:City a rdfs:Class, owl:Class ;
   rdfs:label "City" ;
   rdfs:subClassOf ex:Place .
 
+ex:birthplace
+  a rdf:Property, owl:ObjectProperty ;
+  rdfs:label "birthplace" ;
+  rdfs:domain ex:Person ;
+  rdfs:range ex:City .
+
+ex:based_near
+  a rdf:Property, owl:ObjectProperty ;
+  rdfs:label "based near" ;
+  rdfs:domain ex:Company ;
+  rdfs:range ex:City .
+
+ex:works_for
+  a rdf:Property, owl:ObjectProperty ;
+  rdfs:domain ex:Person;
+  rdfs:range ex:Company .
+
 
 # unfortunately, WebVOWL doesn't show individuals in the graph and I am doing a hack by annotating everything as a class. 
 ex:Alfio_Gliozzo a ex:AI_Researcher, rdfs:Class .
