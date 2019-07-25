@@ -1,8 +1,8 @@
+@prefix ex: <http://nandana.org/example/ontology/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix dc11: <http://purl.org/dc/elements/1.1/> .
 @prefix schema: <http://schema.org/> .
-@prefix ex: <http://nandana.org/example/ontology/> .
 
 ex:
   a owl:Ontology ;
@@ -27,7 +27,7 @@ ex:Company a rdfs:Class, owl:Class ;
 
 ex:TechnologyCompany a rdfs:Class, owl:Class ;
   rdfs:label "Technology Company" ;
-  rdfs:subClassOf ex:Company .  
+  rdfs:subClassOf ex:Company .	
 
 ex:Place a rdfs:Class, owl:Class ;
   rdfs:label "Place" ;
@@ -57,7 +57,6 @@ ex:works_for
   a rdf:Property, owl:ObjectProperty ;
   rdfs:domain ex:Person;
   rdfs:range ex:Company .
-
 
 # unfortunately, WebVOWL doesn't show individuals in the graph and I am doing a hack by annotating everything as a class. 
 ex:Alfio_Gliozzo a ex:AI_Researcher, rdfs:Class .
