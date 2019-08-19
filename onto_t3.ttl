@@ -5,37 +5,37 @@
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
 ex:chemical_pollution
-        a                owl:Class , rdfs:Class ;
+        a                ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "chemical_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
-ex:electronic_waste  a   owl:Class , rdfs:Class ;
+ex:electronic_waste  a   ex:waste_management , ex:waste , owl:Class , rdfs:Class ;
         rdfs:label       "electronic_waste" ;
         rdfs:subClassOf  ex:waste_management , ex:waste .
 
-ex:local_pollution  a    owl:Class , rdfs:Class ;
+ex:local_pollution  a    ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "local_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
-ex:metal_pollution  a    owl:Class , rdfs:Class ;
+ex:metal_pollution  a    ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "metal_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
-ex:marine_ecosystem  a   owl:Class , rdfs:Class ;
+ex:marine_ecosystem  a   ex:ecosystem , owl:Class , rdfs:Class ;
         rdfs:label       "marine_ecosystem" ;
         rdfs:subClassOf  ex:ecosystem .
 
 ex:over-exploitation_of_resources
-        a                owl:Class , rdfs:Class ;
+        a                ex:exploitation_of_resources , owl:Class , rdfs:Class ;
         rdfs:label       "over-exploitation_of_resources" ;
         rdfs:subClassOf  ex:exploitation_of_resources .
 
-ex:baltic_sea  a         owl:Class , rdfs:Class ;
+ex:baltic_sea  a         ex:sea , owl:Class , rdfs:Class ;
         rdfs:label       "baltic_sea" ;
         rdfs:subClassOf  ex:sea .
 
 ex:pollution_from_agricultural_sources
-        a                owl:Class , rdfs:Class ;
+        a                ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "pollution_from_agricultural_sources" ;
         rdfs:subClassOf  ex:pollution .
 
@@ -43,53 +43,53 @@ ex:atlantic_ocean  a     owl:Class , rdfs:Class ;
         rdfs:label       "atlantic_ocean" ;
         rdfs:subClassOf  ex:ocean .
 
-ex:arctic_ocean  a       owl:Class , rdfs:Class ;
+ex:arctic_ocean  a       ex:ocean , owl:Class , rdfs:Class ;
         rdfs:label       "arctic_ocean" ;
         rdfs:subClassOf  ex:ocean .
 
-ex:thermal_pollution  a  owl:Class , rdfs:Class ;
+ex:thermal_pollution  a  ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "thermal_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
-ex:natural_hazard  a     owl:Class , rdfs:Class ;
+ex:natural_hazard  a     ex:mountain , owl:Class , rdfs:Class ;
         rdfs:label       "natural_hazard" ;
         rdfs:subClassOf  ex:mountain .
 
-ex:metal_waste  a        owl:Class , rdfs:Class ;
+ex:metal_waste  a        ex:waste , owl:Class , rdfs:Class ;
         rdfs:label       "metal_waste" ;
         rdfs:subClassOf  ex:waste .
 
-ex:export_of_waste  a    owl:Class , rdfs:Class ;
+ex:export_of_waste  a    ex:waste , owl:Class , rdfs:Class ;
         rdfs:label       "export_of_waste" ;
         rdfs:subClassOf  ex:waste .
 
-ex:organic_pollution  a  owl:Class , rdfs:Class ;
+ex:organic_pollution  a  ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "organic_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
-ex:percolation_water  a  owl:Class , rdfs:Class ;
+ex:percolation_water  a  ex:water , owl:Class , rdfs:Class ;
         rdfs:label       "percolation_water" ;
         rdfs:subClassOf  ex:water .
 
 ex:eu_environmental_policy
-        a                owl:Class , rdfs:Class ;
+        a                ex:environmental_policy , owl:Class , rdfs:Class ;
         rdfs:label       "eu_environmental_policy" ;
         rdfs:subClassOf  ex:environmental_policy .
 
-ex:pesticide_residue  a  owl:Class , rdfs:Class ;
+ex:pesticide_residue  a  ex:pollutant , owl:Class , rdfs:Class ;
         rdfs:label       "pesticide_residue" ;
         rdfs:subClassOf  ex:pollutant .
 
 ex:pollution_from_ships
-        a                owl:Class , rdfs:Class ;
+        a                ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "pollution_from_ships" ;
         rdfs:subClassOf  ex:pollution .
 
-ex:red_sea  a            owl:Class , rdfs:Class ;
+ex:red_sea  a            ex:sea , owl:Class , rdfs:Class ;
         rdfs:label       "red_sea" ;
         rdfs:subClassOf  ex:sea .
 
-ex:emission_trading  a   owl:Class , rdfs:Class ;
+ex:emission_trading  a   ex:climate_change , owl:Class , rdfs:Class ;
         rdfs:label       "emission_trading" ;
         rdfs:subClassOf  ex:climate_change .
 
@@ -99,99 +99,99 @@ ex:environmental_policy
         rdfs:subClassOf  ex:environment .
 
 ex:industrial_pollution
-        a                owl:Class , rdfs:Class ;
+        a                ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "industrial_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
-ex:surface_water  a      owl:Class , rdfs:Class ;
+ex:surface_water  a      ex:groundwater , owl:Class , rdfs:Class ;
         rdfs:label       "surface_water" ;
         rdfs:subClassOf  ex:groundwater .
 
-ex:toxic_substance  a    owl:Class , rdfs:Class ;
+ex:toxic_substance  a    ex:pollutant , owl:Class , rdfs:Class ;
         rdfs:label       "toxic_substance" ;
         rdfs:subClassOf  ex:pollutant .
 
 ex:agricultural_waste
-        a                owl:Class , rdfs:Class ;
+        a                ex:waste , owl:Class , rdfs:Class ;
         rdfs:label       "agricultural_waste" ;
         rdfs:subClassOf  ex:waste .
 
-ex:pacific_ocean  a      owl:Class , rdfs:Class ;
+ex:pacific_ocean  a      ex:ocean , owl:Class , rdfs:Class ;
         rdfs:label       "pacific_ocean" ;
         rdfs:subClassOf  ex:ocean .
 
-ex:bathing_water  a      owl:Class , rdfs:Class ;
+ex:bathing_water  a      ex:water , owl:Class , rdfs:Class ;
         rdfs:label       "bathing_water" ;
         rdfs:subClassOf  ex:water .
 
-ex:indian_ocean  a       owl:Class , rdfs:Class ;
+ex:indian_ocean  a       ex:ocean , owl:Class , rdfs:Class ;
         rdfs:label       "indian_ocean" ;
         rdfs:subClassOf  ex:ocean .
 
 ex:stratospheric_pollution
-        a                owl:Class , rdfs:Class ;
+        a                ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "stratospheric_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
-ex:sewage_sludge  a      owl:Class , rdfs:Class ;
+ex:sewage_sludge  a      ex:waste , owl:Class , rdfs:Class ;
         rdfs:label       "sewage_sludge" ;
         rdfs:subClassOf  ex:waste .
 
 ex:geophysical_environment
-        a                owl:Class , rdfs:Class ;
+        a                ex:environment , owl:Class , rdfs:Class ;
         rdfs:label       "geophysical_environment" ;
         rdfs:subClassOf  ex:environment .
 
-ex:radioactive_waste  a  owl:Class , rdfs:Class ;
+ex:radioactive_waste  a  ex:hazardous_waste , ex:waste , owl:Class , rdfs:Class ;
         rdfs:label       "radioactive_waste" ;
         rdfs:subClassOf  ex:hazardous_waste , ex:waste .
 
 ex:atmospheric_pollutant
-        a                owl:Class , rdfs:Class ;
+        a                ex:pollutant , owl:Class , rdfs:Class ;
         rdfs:label       "atmospheric_pollutant" ;
         rdfs:subClassOf  ex:pollutant .
 
 ex:degradation_of_the_environment
-        a                owl:Class , rdfs:Class ;
+        a                ex:environment , owl:Class , rdfs:Class ;
         rdfs:label       "degradation_of_the_environment" ;
         rdfs:subClassOf  ex:environment .
 
-ex:antarctic_ocean  a    owl:Class , rdfs:Class ;
+ex:antarctic_ocean  a    ex:ocean , owl:Class , rdfs:Class ;
         rdfs:label       "antarctic_ocean" ;
         rdfs:subClassOf  ex:ocean .
 
-ex:industrial_waste  a   owl:Class , rdfs:Class ;
+ex:industrial_waste  a   ex:pollutant , ex:waste , owl:Class , rdfs:Class ;
         rdfs:label       "industrial_waste" ;
         rdfs:subClassOf  ex:pollutant , ex:waste .
 
 ex:eu_emission_allowance
-        a                owl:Class , rdfs:Class ;
+        a                ex:emission_allowance , owl:Class , rdfs:Class ;
         rdfs:label       "eu_emission_allowance" ;
         rdfs:subClassOf  ex:emission_allowance .
 
 ex:non-recoverable_waste
-        a                owl:Class , rdfs:Class ;
+        a                ex:waste , owl:Class , rdfs:Class ;
         rdfs:label       "non-recoverable_waste" ;
         rdfs:subClassOf  ex:waste .
 
-ex:coastal_pollution  a  owl:Class , rdfs:Class ;
+ex:coastal_pollution  a  ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "coastal_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
-ex:mediterranean_sea  a  owl:Class , rdfs:Class ;
+ex:mediterranean_sea  a  ex:sea , owl:Class , rdfs:Class ;
         rdfs:label       "mediterranean_sea" ;
         rdfs:subClassOf  ex:sea .
 
-ex:water_pollutant  a    owl:Class , rdfs:Class ;
+ex:water_pollutant  a    ex:pollutant , owl:Class , rdfs:Class ;
         rdfs:label       "water_pollutant" ;
         rdfs:subClassOf  ex:pollutant .
 
-ex:earthquake  a         owl:Class , rdfs:Class ;
+ex:earthquake  a         ex:natural_disaster , owl:Class , rdfs:Class ;
         rdfs:label       "earthquake" ;
         rdfs:subClassOf  ex:natural_disaster .
 
 ex:terrestrial_ecosystem
-        a                owl:Class , rdfs:Class ;
+        a                ex:ecosystem , owl:Class , rdfs:Class ;
         rdfs:label       "terrestrial_ecosystem" ;
         rdfs:subClassOf  ex:ecosystem .
 
@@ -199,87 +199,87 @@ ex:hazardous_waste  a    owl:Class , rdfs:Class ;
         rdfs:label       "hazardous_waste" ;
         rdfs:subClassOf  ex:waste .
 
-ex:stagnant_water  a     owl:Class , rdfs:Class ;
+ex:stagnant_water  a     ex:water , owl:Class , rdfs:Class ;
         rdfs:label       "stagnant_water" ;
         rdfs:subClassOf  ex:water .
 
 ex:motor_vehicle_pollution
-        a                owl:Class , rdfs:Class ;
+        a                ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "motor_vehicle_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
-ex:north_sea  a          owl:Class , rdfs:Class ;
+ex:north_sea  a          ex:atlantic_ocean , ex:sea , owl:Class , rdfs:Class ;
         rdfs:label       "north_sea" ;
         rdfs:subClassOf  ex:atlantic_ocean , ex:sea .
 
-ex:oil_pollution  a      owl:Class , rdfs:Class ;
+ex:oil_pollution  a      ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "oil_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
-ex:caspian_sea  a        owl:Class , rdfs:Class ;
+ex:caspian_sea  a        ex:sea , owl:Class , rdfs:Class ;
         rdfs:label       "caspian_sea" ;
         rdfs:subClassOf  ex:sea .
 
-ex:chemical_waste  a     owl:Class , rdfs:Class ;
+ex:chemical_waste  a     ex:waste , owl:Class , rdfs:Class ;
         rdfs:label       "chemical_waste" ;
         rdfs:subClassOf  ex:waste .
 
-ex:english_channel  a    owl:Class , rdfs:Class ;
+ex:english_channel  a    ex:atlantic_ocean , owl:Class , rdfs:Class ;
         rdfs:label       "english_channel" ;
         rdfs:subClassOf  ex:atlantic_ocean .
 
-ex:domestic_waste  a     owl:Class , rdfs:Class ;
+ex:domestic_waste  a     ex:waste , owl:Class , rdfs:Class ;
         rdfs:label       "domestic_waste" ;
         rdfs:subClassOf  ex:waste .
 
-ex:hospital_waste  a     owl:Class , rdfs:Class ;
+ex:hospital_waste  a     ex:waste , owl:Class , rdfs:Class ;
         rdfs:label       "hospital_waste" ;
         rdfs:subClassOf  ex:waste .
 
-ex:flood  a              owl:Class , rdfs:Class ;
+ex:flood  a              ex:natural_disaster , owl:Class , rdfs:Class ;
         rdfs:label       "flood" ;
         rdfs:subClassOf  ex:natural_disaster .
 
-ex:soil_pollution  a     owl:Class , rdfs:Class ;
+ex:soil_pollution  a     ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "soil_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
 ex:atmospheric_pollution
-        a                owl:Class , rdfs:Class ;
+        a                ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "atmospheric_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
 ex:radioactive_pollution
-        a                owl:Class , rdfs:Class ;
+        a                ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "radioactive_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
-ex:marine_life  a        owl:Class , rdfs:Class ;
+ex:marine_life  a        ex:ocean , ex:wildlife , owl:Class , rdfs:Class ;
         rdfs:label       "marine_life" ;
         rdfs:subClassOf  ex:ocean , ex:wildlife .
 
-ex:water_pollution  a    owl:Class , rdfs:Class ;
+ex:water_pollution  a    ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "water_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
 ex:underground_storage_of_waste
-        a                owl:Class , rdfs:Class ;
+        a                ex:storage_of_waste , owl:Class , rdfs:Class ;
         rdfs:label       "underground_storage_of_waste" ;
         rdfs:subClassOf  ex:storage_of_waste .
 
-ex:polar_region  a       owl:Class , rdfs:Class ;
+ex:polar_region  a       ex:ocean , owl:Class , rdfs:Class ;
         rdfs:label       "polar_region" ;
         rdfs:subClassOf  ex:ocean .
 
 ex:physical_environment
-        a                owl:Class , rdfs:Class ;
+        a                ex:environment , owl:Class , rdfs:Class ;
         rdfs:label       "physical_environment" ;
         rdfs:subClassOf  ex:environment .
 
-ex:noise_pollution  a    owl:Class , rdfs:Class ;
+ex:noise_pollution  a    ex:pollution , owl:Class , rdfs:Class ;
         rdfs:label       "noise_pollution" ;
         rdfs:subClassOf  ex:pollution .
 
-ex:black_sea  a          owl:Class , rdfs:Class ;
+ex:black_sea  a          ex:sea , owl:Class , rdfs:Class ;
         rdfs:label       "black_sea" ;
         rdfs:subClassOf  ex:sea .
