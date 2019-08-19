@@ -1,0 +1,682 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc11:  <http://purl.org/dc/elements/1.1/> .
+@prefix ex:    <http://nandana.org/example/ontology/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+ex:earth_science  a      owl:Class , rdfs:Class ;
+        rdfs:label       "earth_science" ;
+        rdfs:subClassOf  ex:science , ex:physical_science .
+
+ex:physical_science  a   owl:Class , rdfs:Class ;
+        rdfs:label       "physical_science" ;
+        rdfs:subClassOf  ex:science .
+
+ex:cellular_physiology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "cellular_physiology" ;
+        rdfs:subClassOf  ex:physiology .
+
+ex:cognitive_psychology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "cognitive_psychology" ;
+        rdfs:subClassOf  ex:psychology .
+
+ex:systems_and_integrative_physiology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "systems_and_integrative_physiology" ;
+        rdfs:subClassOf  ex:physiology .
+
+ex:international_and_intercultural_communication
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "international_and_intercultural_communication" ;
+        rdfs:subClassOf  ex:communication .
+
+ex:economic_theory  a    owl:Class , rdfs:Class ;
+        rdfs:label       "economic_theory" ;
+        rdfs:subClassOf  ex:economics .
+
+ex:feminist_philosophy
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "feminist_philosophy" ;
+        rdfs:subClassOf  ex:philosophy .
+
+ex:clinical_nutrition
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "clinical_nutrition" ;
+        rdfs:subClassOf  ex:nutrition .
+
+ex:sociology_of_culture
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "sociology_of_culture" ;
+        rdfs:subClassOf  ex:sociology .
+
+ex:mechanical_engineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "mechanical_engineering" ;
+        rdfs:subClassOf  ex:engineering .
+
+ex:number_theory  a      owl:Class , rdfs:Class ;
+        rdfs:label       "number_theory" ;
+        rdfs:subClassOf  ex:mathematics .
+
+ex:computer_engineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "computer_engineering" ;
+        rdfs:subClassOf  ex:engineering .
+
+ex:discourse_linguistics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "discourse_linguistics" ;
+        rdfs:subClassOf  ex:linguistics .
+
+ex:behavioral_economics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "behavioral_economics" ;
+        rdfs:subClassOf  ex:economics .
+
+ex:typological_linguistics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "typological_linguistics" ;
+        rdfs:subClassOf  ex:linguistics .
+
+ex:social_psychology  a  owl:Class , rdfs:Class ;
+        rdfs:label       "social_psychology" ;
+        rdfs:subClassOf  ex:psychology .
+
+ex:social_science  a     owl:Class , rdfs:Class ;
+        rdfs:label       "social_science" ;
+        rdfs:subClassOf  ex:science .
+
+ex:numerical_analysis
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "numerical_analysis" ;
+        rdfs:subClassOf  ex:mathematics .
+
+ex:astronomy_and_astrophysics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "astronomy_and_astrophysics" ;
+        rdfs:subClassOf  ex:physics .
+
+ex:health_communication
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "health_communication" ;
+        rdfs:subClassOf  ex:communication .
+
+ex:asian_art_and_architecture_history
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "asian_art_and_architecture_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:environmental_chemistry
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "environmental_chemistry" ;
+        rdfs:subClassOf  ex:chemistry .
+
+ex:molecular_physiology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "molecular_physiology" ;
+        rdfs:subClassOf  ex:physiology .
+
+ex:theatre_history  a    owl:Class , rdfs:Class ;
+        rdfs:label       "theatre_history" ;
+        rdfs:subClassOf  ex:history , ex:theatre .
+
+ex:comparative_nutrition
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "comparative_nutrition" ;
+        rdfs:subClassOf  ex:nutrition .
+
+ex:dynamical_systems  a  owl:Class , rdfs:Class ;
+        rdfs:label       "dynamical_systems" ;
+        rdfs:subClassOf  ex:mathematics .
+
+ex:electrical_engineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "electrical_engineering" ;
+        rdfs:subClassOf  ex:engineering .
+
+ex:organic_chemistry  a  owl:Class , rdfs:Class ;
+        rdfs:label       "organic_chemistry" ;
+        rdfs:subClassOf  ex:chemistry .
+
+ex:aquatic_ecology  a    owl:Class , rdfs:Class ;
+        rdfs:label       "aquatic_ecology" ;
+        rdfs:subClassOf  ex:ecology .
+
+ex:geotechnical_engineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "geotechnical_engineering" ;
+        rdfs:subClassOf  ex:civil_engineering , ex:engineering .
+
+ex:pathogenic_microbiology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "pathogenic_microbiology" ;
+        rdfs:subClassOf  ex:microbiology .
+
+ex:nuclear_physics  a    owl:Class , rdfs:Class ;
+        rdfs:label       "nuclear_physics" ;
+        rdfs:subClassOf  ex:physics .
+
+ex:inorganic_chemistry
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "inorganic_chemistry" ;
+        rdfs:subClassOf  ex:chemistry .
+
+ex:diplomatic_history
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "diplomatic_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:chemical_engineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "chemical_engineering" ;
+        rdfs:subClassOf  ex:engineering .
+
+ex:philosophy_of_religion
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "philosophy_of_religion" ;
+        rdfs:subClassOf  ex:religion .
+
+ex:neurolinguistics  a   owl:Class , rdfs:Class ;
+        rdfs:label       "neurolinguistics" ;
+        rdfs:subClassOf  ex:linguistics .
+
+ex:molecular_neuroscience
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "molecular_neuroscience" ;
+        rdfs:subClassOf  ex:neuroscience .
+
+ex:plant_breeding  a     owl:Class , rdfs:Class ;
+        rdfs:label       "plant_breeding" ;
+        rdfs:subClassOf  ex:plant_science .
+
+ex:bioelectrical_and_neuroengineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "bioelectrical_and_neuroengineering" ;
+        rdfs:subClassOf  ex:engineering .
+
+ex:developmental_neuroscience
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "developmental_neuroscience" ;
+        rdfs:subClassOf  ex:neuroscience .
+
+ex:behavioral_ecology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "behavioral_ecology" ;
+        rdfs:subClassOf  ex:ecology .
+
+ex:medieval_history  a   owl:Class , rdfs:Class ;
+        rdfs:label       "medieval_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:comparative_and_historical_linguistics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "comparative_and_historical_linguistics" ;
+        rdfs:subClassOf  ex:linguistics .
+
+ex:pragmatics  a         owl:Class , rdfs:Class ;
+        rdfs:label       "pragmatics" ;
+        rdfs:subClassOf  ex:linguistics .
+
+ex:cellular_neuroscience
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "cellular_neuroscience" ;
+        rdfs:subClassOf  ex:neuroscience .
+
+ex:comparative_physiology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "comparative_physiology" ;
+        rdfs:subClassOf  ex:physiology .
+
+ex:latin_american_history
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "latin_american_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:computer_science  a   owl:Class , rdfs:Class ;
+        rdfs:label       "computer_science" ;
+        rdfs:subClassOf  ex:science .
+
+ex:united_states_history
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "united_states_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:cultural_anthropology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "cultural_anthropology" ;
+        rdfs:subClassOf  ex:social_science , ex:anthropology .
+
+ex:social_anthropology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "social_anthropology" ;
+        rdfs:subClassOf  ex:anthropology .
+
+ex:political_history  a  owl:Class , rdfs:Class ;
+        rdfs:label       "political_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:quantum_physics  a    owl:Class , rdfs:Class ;
+        rdfs:label       "quantum_physics" ;
+        rdfs:subClassOf  ex:physics .
+
+ex:sociolinguistics  a   owl:Class , rdfs:Class ;
+        rdfs:label       "sociolinguistics" ;
+        rdfs:subClassOf  ex:linguistics .
+
+ex:regional_sociology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "regional_sociology" ;
+        rdfs:subClassOf  ex:sociology .
+
+ex:virology  a           owl:Class , rdfs:Class ;
+        rdfs:label       "virology" ;
+        rdfs:subClassOf  ex:microbiology .
+
+ex:molecular_nutrition
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "molecular_nutrition" ;
+        rdfs:subClassOf  ex:nutrition .
+
+ex:linguistic_anthropology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "linguistic_anthropology" ;
+        rdfs:subClassOf  ex:anthropology .
+
+ex:life_science  a       owl:Class , rdfs:Class ;
+        rdfs:label       "life_science" ;
+        rdfs:subClassOf  ex:science .
+
+ex:social_influence_and_political_communication
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "social_influence_and_political_communication" ;
+        rdfs:subClassOf  ex:communication .
+
+ex:algebraic_geometry
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "algebraic_geometry" ;
+        rdfs:subClassOf  ex:mathematics .
+
+ex:international_economics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "international_economics" ;
+        rdfs:subClassOf  ex:economics .
+
+ex:computational_linguistics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "computational_linguistics" ;
+        rdfs:subClassOf  ex:linguistics .
+
+ex:theory_and_criticism_history
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "theory_and_criticism_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:european_history  a   owl:Class , rdfs:Class ;
+        rdfs:label       "european_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:cognitive_neuroscience
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "cognitive_neuroscience" ;
+        rdfs:subClassOf  ex:neuroscience .
+
+ex:medicinal-pharmaceutical_chemistry
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "medicinal-pharmaceutical_chemistry" ;
+        rdfs:subClassOf  ex:chemistry .
+
+ex:asian_history  a      owl:Class , rdfs:Class ;
+        rdfs:label       "asian_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:applied_linguistics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "applied_linguistics" ;
+        rdfs:subClassOf  ex:linguistics .
+
+ex:systems_engineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "systems_engineering" ;
+        rdfs:subClassOf  ex:engineering .
+
+ex:international_nutrition
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "international_nutrition" ;
+        rdfs:subClassOf  ex:nutrition .
+
+ex:structural_engineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "structural_engineering" ;
+        rdfs:subClassOf  ex:civil_engineering , ex:engineering .
+
+ex:philosophy_of_language
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "philosophy_of_language" ;
+        rdfs:subClassOf  ex:philosophy .
+
+ex:aerospace_engineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "aerospace_engineering" ;
+        rdfs:subClassOf  ex:engineering .
+
+ex:exercise_physiology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "exercise_physiology" ;
+        rdfs:subClassOf  ex:physiology .
+
+ex:systems_and_integrative_engineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "systems_and_integrative_engineering" ;
+        rdfs:subClassOf  ex:engineering .
+
+ex:biochemical_nutrition
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "biochemical_nutrition" ;
+        rdfs:subClassOf  ex:nutrition .
+
+ex:polymer_chemistry  a  owl:Class , rdfs:Class ;
+        rdfs:label       "polymer_chemistry" ;
+        rdfs:subClassOf  ex:chemistry .
+
+ex:environmental_engineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "environmental_engineering" ;
+        rdfs:subClassOf  ex:engineering .
+
+ex:labor_economics  a    owl:Class , rdfs:Class ;
+        rdfs:label       "labor_economics" ;
+        rdfs:subClassOf  ex:economics .
+
+ex:econometrics  a       owl:Class , rdfs:Class ;
+        rdfs:label       "econometrics" ;
+        rdfs:subClassOf  ex:economics .
+
+ex:gender_history  a     owl:Class , rdfs:Class ;
+        rdfs:label       "gender_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:clinical_psychology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "clinical_psychology" ;
+        rdfs:subClassOf  ex:psychology .
+
+ex:anthropological_linguistics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "anthropological_linguistics" ;
+        rdfs:subClassOf  ex:linguistics .
+
+ex:computational_neuroscience
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "computational_neuroscience" ;
+        rdfs:subClassOf  ex:neuroscience .
+
+ex:industrial_engineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "industrial_engineering" ;
+        rdfs:subClassOf  ex:engineering_science .
+
+ex:intellectual_history
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "intellectual_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:communication_technology_and_new_media
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "communication_technology_and_new_media" ;
+        rdfs:subClassOf  ex:communication .
+
+ex:philosophy_of_science
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "philosophy_of_science" ;
+        rdfs:subClassOf  ex:social_science , ex:philosophy .
+
+ex:human_nutrition  a    owl:Class , rdfs:Class ;
+        rdfs:label       "human_nutrition" ;
+        rdfs:subClassOf  ex:nutrition .
+
+ex:discrete_mathematics_and_combinatorics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "discrete_mathematics_and_combinatorics" ;
+        rdfs:subClassOf  ex:mathematics .
+
+ex:bacteriology  a       owl:Class , rdfs:Class ;
+        rdfs:label       "bacteriology" ;
+        rdfs:subClassOf  ex:microbiology .
+
+ex:health_psychology  a  owl:Class , rdfs:Class ;
+        rdfs:label       "health_psychology" ;
+        rdfs:subClassOf  ex:psychology .
+
+ex:human_geography  a    owl:Class , rdfs:Class ;
+        rdfs:label       "human_geography" ;
+        rdfs:subClassOf  ex:geography .
+
+ex:terrestrial_ecology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "terrestrial_ecology" ;
+        rdfs:subClassOf  ex:ecology .
+
+ex:political_science  a  owl:Class , rdfs:Class ;
+        rdfs:label       "political_science" ;
+        rdfs:subClassOf  ex:science .
+
+ex:biological_and_chemical_physics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "biological_and_chemical_physics" ;
+        rdfs:subClassOf  ex:physics .
+
+ex:immunology_of_infectious_disease
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "immunology_of_infectious_disease" ;
+        rdfs:subClassOf  ex:immunology .
+
+ex:cultural_history  a   owl:Class , rdfs:Class ;
+        rdfs:label       "cultural_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:developmental_psychology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "developmental_psychology" ;
+        rdfs:subClassOf  ex:psychology .
+
+ex:environmental_microbiology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "environmental_microbiology" ;
+        rdfs:subClassOf  ex:microbiology .
+
+ex:military_history  a   owl:Class , rdfs:Class ;
+        rdfs:label       "military_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:african_history  a    owl:Class , rdfs:Class ;
+        rdfs:label       "african_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:organizational_communication
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "organizational_communication" ;
+        rdfs:subClassOf  ex:communication .
+
+ex:nutritional_epidemiology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "nutritional_epidemiology" ;
+        rdfs:subClassOf  ex:nutrition .
+
+ex:biomechanical_engineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "biomechanical_engineering" ;
+        rdfs:subClassOf  ex:mechanical_engineering .
+
+ex:philosophy_of_mind
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "philosophy_of_mind" ;
+        rdfs:subClassOf  ex:philosophy .
+
+ex:psycholinguistics  a  owl:Class , rdfs:Class ;
+        rdfs:label       "psycholinguistics" ;
+        rdfs:subClassOf  ex:linguistics .
+
+ex:set_theory  a         owl:Class , rdfs:Class ;
+        rdfs:label       "set_theory" ;
+        rdfs:subClassOf  ex:mathematics .
+
+ex:continental_philosophy
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "continental_philosophy" ;
+        rdfs:subClassOf  ex:philosophy .
+
+ex:civil_engineering  a  owl:Class , rdfs:Class ;
+        rdfs:label       "civil_engineering" ;
+        rdfs:subClassOf  ex:engineering .
+
+ex:public_economics  a   owl:Class , rdfs:Class ;
+        rdfs:label       "public_economics" ;
+        rdfs:subClassOf  ex:economics .
+
+ex:community_nutrition
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "community_nutrition" ;
+        rdfs:subClassOf  ex:nutrition .
+
+ex:mass_communication
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "mass_communication" ;
+        rdfs:subClassOf  ex:communication .
+
+ex:systems_neuroscience
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "systems_neuroscience" ;
+        rdfs:subClassOf  ex:neuroscience .
+
+ex:rural_sociology  a    owl:Class , rdfs:Class ;
+        rdfs:label       "rural_sociology" ;
+        rdfs:subClassOf  ex:sociology .
+
+ex:phonetics  a          owl:Class , rdfs:Class ;
+        rdfs:label       "phonetics" ;
+        rdfs:subClassOf  ex:linguistics .
+
+ex:biological_engineering
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "biological_engineering" ;
+        rdfs:subClassOf  ex:engineering .
+
+ex:ethics_and_political_philosophy
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "ethics_and_political_philosophy" ;
+        rdfs:subClassOf  ex:philosophy .
+
+ex:plasma_and_beam_physics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "plasma_and_beam_physics" ;
+        rdfs:subClassOf  ex:physics .
+
+ex:evolutionary_physiology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "evolutionary_physiology" ;
+        rdfs:subClassOf  ex:physiology .
+
+ex:social_history  a     owl:Class , rdfs:Class ;
+        rdfs:label       "social_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:history_of_philosophy
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "history_of_philosophy" ;
+        rdfs:subClassOf  ex:philosophy .
+
+ex:materials_chemistry
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "materials_chemistry" ;
+        rdfs:subClassOf  ex:chemistry .
+
+ex:contemporary_art_history
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "contemporary_art_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:american_art_and_architecture_history
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "american_art_and_architecture_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:engineering_physics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "engineering_physics" ;
+        rdfs:subClassOf  ex:physics .
+
+ex:neuroscience  a       owl:Class , rdfs:Class ;
+        rdfs:label       "neuroscience" ;
+        rdfs:subClassOf  ex:science .
+
+ex:physical_and_environmental_geography
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "physical_and_environmental_geography" ;
+        rdfs:subClassOf  ex:geography .
+
+ex:macroeconomics  a     owl:Class , rdfs:Class ;
+        rdfs:label       "macroeconomics" ;
+        rdfs:subClassOf  ex:economics .
+
+ex:modern_art_and_architecture_history
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "modern_art_and_architecture_history" ;
+        rdfs:subClassOf  ex:history .
+
+ex:community_psychology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "community_psychology" ;
+        rdfs:subClassOf  ex:psychology .
+
+ex:genetic_nutrition  a  owl:Class , rdfs:Class ;
+        rdfs:label       "genetic_nutrition" ;
+        rdfs:subClassOf  ex:nutrition .
+
+ex:analytical_chemistry
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "analytical_chemistry" ;
+        rdfs:subClassOf  ex:chemistry .
+
+ex:engineering_science
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "engineering_science" ;
+        rdfs:subClassOf  ex:engineering .
+
+ex:criminology  a        owl:Class , rdfs:Class ;
+        rdfs:label       "criminology" ;
+        rdfs:subClassOf  ex:sociology .
+
+ex:industrial_and_organizational_psychology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "industrial_and_organizational_psychology" ;
+        rdfs:subClassOf  ex:psychology .
+
+ex:condensed_matter_physics
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "condensed_matter_physics" ;
+        rdfs:subClassOf  ex:physics .
+
+ex:biological_psychology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "biological_psychology" ;
+        rdfs:subClassOf  ex:psychology .
+
+ex:materials_science  a  owl:Class , rdfs:Class ;
+        rdfs:label       "materials_science" ;
+        rdfs:subClassOf  ex:science .
+
+ex:physical_chemistry
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "physical_chemistry" ;
+        rdfs:subClassOf  ex:chemistry .
+
+ex:evolutionary_ecology
+        a                owl:Class , rdfs:Class ;
+        rdfs:label       "evolutionary_ecology" ;
+        rdfs:subClassOf  ex:ecology .
+
+ex:biochemistry  a       owl:Class , rdfs:Class ;
+        rdfs:label       "biochemistry" ;
+        rdfs:subClassOf  ex:chemistry .
