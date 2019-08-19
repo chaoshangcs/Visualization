@@ -6,7 +6,7 @@
 
 ex:earth_science  a      owl:Class , rdfs:Class ;
         rdfs:label       "earth_science" ;
-        rdfs:subClassOf  ex:science , ex:physical_science .
+        rdfs:subClassOf  ex:science .
 
 ex:physical_science  a   owl:Class , rdfs:Class ;
         rdfs:label       "physical_science" ;
