@@ -4,698 +4,282 @@
 @prefix owl:   <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
 
-ex:biophysics  a         owl:Class , rdfs:Class ;
-        rdfs:label       "biophysics" ;
-        rdfs:subClassOf  ex:physics .
-
-ex:radiobiology  a       owl:Class , rdfs:Class ;
-        rdfs:label       "radiobiology" ;
-        rdfs:subClassOf  ex:biology .
-
-ex:positive_correlation
+ex:chemical_pollution
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "positive_correlation" ;
-        rdfs:subClassOf  ex:correlation .
+        rdfs:label       "chemical_pollution" ;
+        rdfs:subClassOf  ex:pollution .
 
-ex:economic_geography
+ex:electronic_waste  a   owl:Class , rdfs:Class ;
+        rdfs:label       "electronic_waste" ;
+        rdfs:subClassOf  ex:waste_management , ex:waste .
+
+ex:local_pollution  a    owl:Class , rdfs:Class ;
+        rdfs:label       "local_pollution" ;
+        rdfs:subClassOf  ex:pollution .
+
+ex:metal_pollution  a    owl:Class , rdfs:Class ;
+        rdfs:label       "metal_pollution" ;
+        rdfs:subClassOf  ex:pollution .
+
+ex:marine_ecosystem  a   owl:Class , rdfs:Class ;
+        rdfs:label       "marine_ecosystem" ;
+        rdfs:subClassOf  ex:ecosystem .
+
+ex:over-exploitation_of_resources
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "economic_geography" ;
-        rdfs:subClassOf  ex:geography .
+        rdfs:label       "over-exploitation_of_resources" ;
+        rdfs:subClassOf  ex:exploitation_of_resources .
 
-ex:veterinary_medicine
+ex:baltic_sea  a         owl:Class , rdfs:Class ;
+        rdfs:label       "baltic_sea" ;
+        rdfs:subClassOf  ex:sea .
+
+ex:pollution_from_agricultural_sources
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "veterinary_medicine" ;
-        rdfs:subClassOf  ex:medicine .
+        rdfs:label       "pollution_from_agricultural_sources" ;
+        rdfs:subClassOf  ex:pollution .
 
-ex:biosystematics  a     owl:Class , rdfs:Class ;
-        rdfs:label       "biosystematics" ;
-        rdfs:subClassOf  ex:systematics .
+ex:atlantic_ocean  a     owl:Class , rdfs:Class ;
+        rdfs:label       "atlantic_ocean" ;
+        rdfs:subClassOf  ex:ocean .
 
-ex:microeconomics  a     owl:Class , rdfs:Class ;
-        rdfs:label       "microeconomics" ;
-        rdfs:subClassOf  ex:economics .
+ex:arctic_ocean  a       owl:Class , rdfs:Class ;
+        rdfs:label       "arctic_ocean" ;
+        rdfs:subClassOf  ex:ocean .
 
-ex:developmental_anatomy
+ex:thermal_pollution  a  owl:Class , rdfs:Class ;
+        rdfs:label       "thermal_pollution" ;
+        rdfs:subClassOf  ex:pollution .
+
+ex:natural_hazard  a     owl:Class , rdfs:Class ;
+        rdfs:label       "natural_hazard" ;
+        rdfs:subClassOf  ex:mountain .
+
+ex:metal_waste  a        owl:Class , rdfs:Class ;
+        rdfs:label       "metal_waste" ;
+        rdfs:subClassOf  ex:waste .
+
+ex:export_of_waste  a    owl:Class , rdfs:Class ;
+        rdfs:label       "export_of_waste" ;
+        rdfs:subClassOf  ex:waste .
+
+ex:organic_pollution  a  owl:Class , rdfs:Class ;
+        rdfs:label       "organic_pollution" ;
+        rdfs:subClassOf  ex:pollution .
+
+ex:percolation_water  a  owl:Class , rdfs:Class ;
+        rdfs:label       "percolation_water" ;
+        rdfs:subClassOf  ex:water .
+
+ex:eu_environmental_policy
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "developmental_anatomy" ;
-        rdfs:subClassOf  ex:anatomy .
+        rdfs:label       "eu_environmental_policy" ;
+        rdfs:subClassOf  ex:environmental_policy .
 
-ex:quantum_physics  a    owl:Class , rdfs:Class ;
-        rdfs:label       "quantum_physics" ;
-        rdfs:subClassOf  ex:physics .
+ex:pesticide_residue  a  owl:Class , rdfs:Class ;
+        rdfs:label       "pesticide_residue" ;
+        rdfs:subClassOf  ex:pollutant .
 
-ex:cognitive_neuroscience
+ex:pollution_from_ships
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "cognitive_neuroscience" ;
-        rdfs:subClassOf  ex:neuroscience .
+        rdfs:label       "pollution_from_ships" ;
+        rdfs:subClassOf  ex:pollution .
 
-ex:lexical_semantics  a  owl:Class , rdfs:Class ;
-        rdfs:label       "lexical_semantics" ;
-        rdfs:subClassOf  ex:semantics .
+ex:red_sea  a            owl:Class , rdfs:Class ;
+        rdfs:label       "red_sea" ;
+        rdfs:subClassOf  ex:sea .
 
-ex:quantum_mechanics  a  owl:Class , rdfs:Class ;
-        rdfs:label       "quantum_mechanics" ;
-        rdfs:subClassOf  ex:physics .
+ex:emission_trading  a   owl:Class , rdfs:Class ;
+        rdfs:label       "emission_trading" ;
+        rdfs:subClassOf  ex:climate_change .
 
-ex:solid_geometry  a     owl:Class , rdfs:Class ;
-        rdfs:label       "solid_geometry" ;
-        rdfs:subClassOf  ex:geometry .
-
-ex:synchronic_linguistics
+ex:environmental_policy
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "synchronic_linguistics" ;
-        rdfs:subClassOf  ex:linguistics .
+        rdfs:label       "environmental_policy" ;
+        rdfs:subClassOf  ex:environment .
 
-ex:bacteriology  a       owl:Class , rdfs:Class ;
-        rdfs:label       "bacteriology" ;
-        rdfs:subClassOf  ex:microbiology .
-
-ex:nonparametric_statistics
+ex:industrial_pollution
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "nonparametric_statistics" ;
-        rdfs:subClassOf  ex:statistics .
+        rdfs:label       "industrial_pollution" ;
+        rdfs:subClassOf  ex:pollution .
 
-ex:formal_semantics  a   owl:Class , rdfs:Class ;
-        rdfs:label       "formal_semantics" ;
-        rdfs:subClassOf  ex:semantics .
+ex:surface_water  a      owl:Class , rdfs:Class ;
+        rdfs:label       "surface_water" ;
+        rdfs:subClassOf  ex:groundwater .
 
-ex:nuclear_medicine  a   owl:Class , rdfs:Class ;
-        rdfs:label       "nuclear_medicine" ;
-        rdfs:subClassOf  ex:medicine .
+ex:toxic_substance  a    owl:Class , rdfs:Class ;
+        rdfs:label       "toxic_substance" ;
+        rdfs:subClassOf  ex:pollutant .
 
-ex:paleobotany  a        owl:Class , rdfs:Class ;
-        rdfs:label       "paleobotany" ;
-        rdfs:subClassOf  ex:botany .
-
-ex:comparative_psychology
+ex:agricultural_waste
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "comparative_psychology" ;
-        rdfs:subClassOf  ex:psychology .
+        rdfs:label       "agricultural_waste" ;
+        rdfs:subClassOf  ex:waste .
 
-ex:petrology  a          owl:Class , rdfs:Class ;
-        rdfs:label       "petrology" ;
-        rdfs:subClassOf  ex:geology .
+ex:pacific_ocean  a      owl:Class , rdfs:Class ;
+        rdfs:label       "pacific_ocean" ;
+        rdfs:subClassOf  ex:ocean .
 
-ex:life_science  a       owl:Class , rdfs:Class ;
-        rdfs:label       "life_science" ;
-        rdfs:subClassOf  ex:science .
+ex:bathing_water  a      owl:Class , rdfs:Class ;
+        rdfs:label       "bathing_water" ;
+        rdfs:subClassOf  ex:water .
 
-ex:internal_medicine  a  owl:Class , rdfs:Class ;
-        rdfs:label       "internal_medicine" ;
-        rdfs:subClassOf  ex:medicine .
+ex:indian_ocean  a       owl:Class , rdfs:Class ;
+        rdfs:label       "indian_ocean" ;
+        rdfs:subClassOf  ex:ocean .
 
-ex:integral_calculus  a  owl:Class , rdfs:Class ;
-        rdfs:label       "integral_calculus" ;
-        rdfs:subClassOf  ex:calculus .
-
-ex:aeromechanics  a      owl:Class , rdfs:Class ;
-        rdfs:label       "aeromechanics" ;
-        rdfs:subClassOf  ex:mechanics .
-
-ex:particle_physics  a   owl:Class , rdfs:Class ;
-        rdfs:label       "particle_physics" ;
-        rdfs:subClassOf  ex:physics .
-
-ex:microelectronics  a   owl:Class , rdfs:Class ;
-        rdfs:label       "microelectronics" ;
-        rdfs:subClassOf  ex:electronics .
-
-ex:abnormal_psychology
+ex:stratospheric_pollution
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "abnormal_psychology" ;
-        rdfs:subClassOf  ex:psychology .
+        rdfs:label       "stratospheric_pollution" ;
+        rdfs:subClassOf  ex:pollution .
 
-ex:plasma_physics  a     owl:Class , rdfs:Class ;
-        rdfs:label       "plasma_physics" ;
-        rdfs:subClassOf  ex:physics .
+ex:sewage_sludge  a      owl:Class , rdfs:Class ;
+        rdfs:label       "sewage_sludge" ;
+        rdfs:subClassOf  ex:waste .
 
-ex:pragmatics  a         owl:Class , rdfs:Class ;
-        rdfs:label       "pragmatics" ;
-        rdfs:subClassOf  ex:linguistics .
-
-ex:elementary_geometry
+ex:geophysical_environment
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "elementary_geometry" ;
-        rdfs:subClassOf  ex:geometry .
+        rdfs:label       "geophysical_environment" ;
+        rdfs:subClassOf  ex:environment .
 
-ex:pure_mathematics  a   owl:Class , rdfs:Class ;
-        rdfs:label       "pure_mathematics" ;
-        rdfs:subClassOf  ex:mathematics .
+ex:radioactive_waste  a  owl:Class , rdfs:Class ;
+        rdfs:label       "radioactive_waste" ;
+        rdfs:subClassOf  ex:hazardous_waste , ex:waste .
 
-ex:cognitive_psychology
+ex:atmospheric_pollutant
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "cognitive_psychology" ;
-        rdfs:subClassOf  ex:psychology .
+        rdfs:label       "atmospheric_pollutant" ;
+        rdfs:subClassOf  ex:pollutant .
 
-ex:paleogeology  a       owl:Class , rdfs:Class ;
-        rdfs:label       "paleogeology" ;
-        rdfs:subClassOf  ex:geology .
-
-ex:cytogenetics  a       owl:Class , rdfs:Class ;
-        rdfs:label       "cytogenetics" ;
-        rdfs:subClassOf  ex:genetics .
-
-ex:thermochemistry  a    owl:Class , rdfs:Class ;
-        rdfs:label       "thermochemistry" ;
-        rdfs:subClassOf  ex:chemistry .
-
-ex:paleoecology  a       owl:Class , rdfs:Class ;
-        rdfs:label       "paleoecology" ;
-        rdfs:subClassOf  ex:ecology .
-
-ex:inorganic_chemistry
+ex:degradation_of_the_environment
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "inorganic_chemistry" ;
-        rdfs:subClassOf  ex:chemistry .
+        rdfs:label       "degradation_of_the_environment" ;
+        rdfs:subClassOf  ex:environment .
 
-ex:descriptive_linguistics
+ex:antarctic_ocean  a    owl:Class , rdfs:Class ;
+        rdfs:label       "antarctic_ocean" ;
+        rdfs:subClassOf  ex:ocean .
+
+ex:industrial_waste  a   owl:Class , rdfs:Class ;
+        rdfs:label       "industrial_waste" ;
+        rdfs:subClassOf  ex:pollutant , ex:waste .
+
+ex:eu_emission_allowance
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "descriptive_linguistics" ;
-        rdfs:subClassOf  ex:linguistics .
+        rdfs:label       "eu_emission_allowance" ;
+        rdfs:subClassOf  ex:emission_allowance .
 
-ex:undercut  a           owl:Class , rdfs:Class ;
-        rdfs:label       "undercut" ;
-        rdfs:subClassOf  ex:geometry .
-
-ex:functional_anatomy
+ex:non-recoverable_waste
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "functional_anatomy" ;
-        rdfs:subClassOf  ex:anatomy .
+        rdfs:label       "non-recoverable_waste" ;
+        rdfs:subClassOf  ex:waste .
 
-ex:spurious_correlation
+ex:coastal_pollution  a  owl:Class , rdfs:Class ;
+        rdfs:label       "coastal_pollution" ;
+        rdfs:subClassOf  ex:pollution .
+
+ex:mediterranean_sea  a  owl:Class , rdfs:Class ;
+        rdfs:label       "mediterranean_sea" ;
+        rdfs:subClassOf  ex:sea .
+
+ex:water_pollutant  a    owl:Class , rdfs:Class ;
+        rdfs:label       "water_pollutant" ;
+        rdfs:subClassOf  ex:pollutant .
+
+ex:earthquake  a         owl:Class , rdfs:Class ;
+        rdfs:label       "earthquake" ;
+        rdfs:subClassOf  ex:natural_disaster .
+
+ex:terrestrial_ecosystem
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "spurious_correlation" ;
-        rdfs:subClassOf  ex:correlation .
+        rdfs:label       "terrestrial_ecosystem" ;
+        rdfs:subClassOf  ex:ecosystem .
 
-ex:sociobiology  a       owl:Class , rdfs:Class ;
-        rdfs:label       "sociobiology" ;
-        rdfs:subClassOf  ex:biology .
+ex:hazardous_waste  a    owl:Class , rdfs:Class ;
+        rdfs:label       "hazardous_waste" ;
+        rdfs:subClassOf  ex:waste .
 
-ex:psychopharmacology
+ex:stagnant_water  a     owl:Class , rdfs:Class ;
+        rdfs:label       "stagnant_water" ;
+        rdfs:subClassOf  ex:water .
+
+ex:motor_vehicle_pollution
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "psychopharmacology" ;
-        rdfs:subClassOf  ex:pharmacology .
+        rdfs:label       "motor_vehicle_pollution" ;
+        rdfs:subClassOf  ex:pollution .
 
-ex:neurolinguistics  a   owl:Class , rdfs:Class ;
-        rdfs:label       "neurolinguistics" ;
-        rdfs:subClassOf  ex:linguistics .
+ex:north_sea  a          owl:Class , rdfs:Class ;
+        rdfs:label       "north_sea" ;
+        rdfs:subClassOf  ex:atlantic_ocean , ex:sea .
 
-ex:information_science
+ex:oil_pollution  a      owl:Class , rdfs:Class ;
+        rdfs:label       "oil_pollution" ;
+        rdfs:subClassOf  ex:pollution .
+
+ex:caspian_sea  a        owl:Class , rdfs:Class ;
+        rdfs:label       "caspian_sea" ;
+        rdfs:subClassOf  ex:sea .
+
+ex:chemical_waste  a     owl:Class , rdfs:Class ;
+        rdfs:label       "chemical_waste" ;
+        rdfs:subClassOf  ex:waste .
+
+ex:english_channel  a    owl:Class , rdfs:Class ;
+        rdfs:label       "english_channel" ;
+        rdfs:subClassOf  ex:atlantic_ocean .
+
+ex:domestic_waste  a     owl:Class , rdfs:Class ;
+        rdfs:label       "domestic_waste" ;
+        rdfs:subClassOf  ex:waste .
+
+ex:hospital_waste  a     owl:Class , rdfs:Class ;
+        rdfs:label       "hospital_waste" ;
+        rdfs:subClassOf  ex:waste .
+
+ex:flood  a              owl:Class , rdfs:Class ;
+        rdfs:label       "flood" ;
+        rdfs:subClassOf  ex:natural_disaster .
+
+ex:soil_pollution  a     owl:Class , rdfs:Class ;
+        rdfs:label       "soil_pollution" ;
+        rdfs:subClassOf  ex:pollution .
+
+ex:atmospheric_pollution
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "information_science" ;
-        rdfs:subClassOf  ex:science .
+        rdfs:label       "atmospheric_pollution" ;
+        rdfs:subClassOf  ex:pollution .
 
-ex:fractal_geometry  a   owl:Class , rdfs:Class ;
-        rdfs:label       "fractal_geometry" ;
-        rdfs:subClassOf  ex:geometry .
-
-ex:partial_correlation
+ex:radioactive_pollution
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "partial_correlation" ;
-        rdfs:subClassOf  ex:correlation .
+        rdfs:label       "radioactive_pollution" ;
+        rdfs:subClassOf  ex:pollution .
 
-ex:descriptive_grammar
+ex:marine_life  a        owl:Class , rdfs:Class ;
+        rdfs:label       "marine_life" ;
+        rdfs:subClassOf  ex:ocean , ex:wildlife .
+
+ex:water_pollution  a    owl:Class , rdfs:Class ;
+        rdfs:label       "water_pollution" ;
+        rdfs:subClassOf  ex:pollution .
+
+ex:underground_storage_of_waste
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "descriptive_grammar" ;
-        rdfs:subClassOf  ex:grammar .
+        rdfs:label       "underground_storage_of_waste" ;
+        rdfs:subClassOf  ex:storage_of_waste .
 
-ex:clinical_anatomy  a   owl:Class , rdfs:Class ;
-        rdfs:label       "clinical_anatomy" ;
-        rdfs:subClassOf  ex:anatomy .
+ex:polar_region  a       owl:Class , rdfs:Class ;
+        rdfs:label       "polar_region" ;
+        rdfs:subClassOf  ex:ocean .
 
-ex:non_euclidean_geometry
+ex:physical_environment
         a                owl:Class , rdfs:Class ;
-        rdfs:label       "non_euclidean_geometry" ;
-        rdfs:subClassOf  ex:geometry .
-
-ex:economic_geology  a   owl:Class , rdfs:Class ;
-        rdfs:label       "economic_geology" ;
-        rdfs:subClassOf  ex:geology .
-
-ex:physical_chemistry
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "physical_chemistry" ;
-        rdfs:subClassOf  ex:chemistry .
-
-ex:earth_science  a      owl:Class , rdfs:Class ;
-        rdfs:label       "earth_science" ;
-        rdfs:subClassOf  ex:science .
-
-ex:differential_calculus
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "differential_calculus" ;
-        rdfs:subClassOf  ex:calculus .
-
-ex:prescriptive_grammar
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "prescriptive_grammar" ;
-        rdfs:subClassOf  ex:grammar .
-
-ex:neuroanatomy  a       owl:Class , rdfs:Class ;
-        rdfs:label       "neuroanatomy" ;
-        rdfs:subClassOf  ex:anatomy .
-
-ex:neuroscience  a       owl:Class , rdfs:Class ;
-        rdfs:label       "neuroscience" ;
-        rdfs:subClassOf  ex:science .
-
-ex:gross_anatomy  a      owl:Class , rdfs:Class ;
-        rdfs:label       "gross_anatomy" ;
-        rdfs:subClassOf  ex:anatomy .
-
-ex:vector_algebra  a     owl:Class , rdfs:Class ;
-        rdfs:label       "vector_algebra" ;
-        rdfs:subClassOf  ex:algebra .
-
-ex:negative_correlation
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "negative_correlation" ;
-        rdfs:subClassOf  ex:correlation .
-
-ex:regional_anatomy  a   owl:Class , rdfs:Class ;
-        rdfs:label       "regional_anatomy" ;
-        rdfs:subClassOf  ex:anatomy .
-
-ex:rheumatology  a       owl:Class , rdfs:Class ;
-        rdfs:label       "rheumatology" ;
-        rdfs:subClassOf  ex:pediatrics .
-
-ex:physiological_psychology
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "physiological_psychology" ;
-        rdfs:subClassOf  ex:psychology .
-
-ex:space_medicine  a     owl:Class , rdfs:Class ;
-        rdfs:label       "space_medicine" ;
-        rdfs:subClassOf  ex:medicine .
-
-ex:entomology  a         owl:Class , rdfs:Class ;
-        rdfs:label       "entomology" ;
-        rdfs:subClassOf  ex:natural_science .
-
-ex:structural_genomics
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "structural_genomics" ;
-        rdfs:subClassOf  ex:genomics .
-
-ex:neurophysiology  a    owl:Class , rdfs:Class ;
-        rdfs:label       "neurophysiology" ;
-        rdfs:subClassOf  ex:physiology .
-
-ex:functional_genomics
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "functional_genomics" ;
-        rdfs:subClassOf  ex:genomics .
-
-ex:set_theory  a         owl:Class , rdfs:Class ;
-        rdfs:label       "set_theory" ;
-        rdfs:subClassOf  ex:mathematics .
-
-ex:mineralogy  a         owl:Class , rdfs:Class ;
-        rdfs:label       "mineralogy" ;
-        rdfs:subClassOf  ex:natural_science .
-
-ex:teratology  a         owl:Class , rdfs:Class ;
-        rdfs:label       "teratology" ;
-        rdfs:subClassOf  ex:toxicology .
-
-ex:astrophysics  a       owl:Class , rdfs:Class ;
-        rdfs:label       "astrophysics" ;
-        rdfs:subClassOf  ex:physics .
-
-ex:classical_mechanics
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "classical_mechanics" ;
-        rdfs:subClassOf  ex:mechanics .
-
-ex:sports_medicine  a    owl:Class , rdfs:Class ;
-        rdfs:label       "sports_medicine" ;
-        rdfs:subClassOf  ex:medicine .
-
-ex:supply_side_economics
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "supply_side_economics" ;
-        rdfs:subClassOf  ex:economics .
-
-ex:micropaleontology  a  owl:Class , rdfs:Class ;
-        rdfs:label       "micropaleontology" ;
-        rdfs:subClassOf  ex:paleontology .
-
-ex:clinical_psychology
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "clinical_psychology" ;
-        rdfs:subClassOf  ex:psychology .
-
-ex:endodontics  a        owl:Class , rdfs:Class ;
-        rdfs:label       "endodontics" ;
-        rdfs:subClassOf  ex:dentistry .
-
-ex:magnetohydrodynamics
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "magnetohydrodynamics" ;
-        rdfs:subClassOf  ex:hydrodynamics .
-
-ex:immunochemistry  a    owl:Class , rdfs:Class ;
-        rdfs:label       "immunochemistry" ;
-        rdfs:subClassOf  ex:chemistry .
-
-ex:criminology  a        owl:Class , rdfs:Class ;
-        rdfs:label       "criminology" ;
-        rdfs:subClassOf  ex:sociology .
-
-ex:physical_anthropology
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "physical_anthropology" ;
-        rdfs:subClassOf  ex:anthropology .
-
-ex:tropical_medicine  a  owl:Class , rdfs:Class ;
-        rdfs:label       "tropical_medicine" ;
-        rdfs:subClassOf  ex:medicine .
-
-ex:paleobiology  a       owl:Class , rdfs:Class ;
-        rdfs:label       "paleobiology" ;
-        rdfs:subClassOf  ex:biology .
-
-ex:radio_astronomy  a    owl:Class , rdfs:Class ;
-        rdfs:label       "radio_astronomy" ;
-        rdfs:subClassOf  ex:astronomy .
-
-ex:virology  a           owl:Class , rdfs:Class ;
-        rdfs:label       "virology" ;
-        rdfs:subClassOf  ex:biotechnology , ex:biomedical_science , ex:microbiology .
-
-ex:sociolinguistics  a   owl:Class , rdfs:Class ;
-        rdfs:label       "sociolinguistics" ;
-        rdfs:subClassOf  ex:linguistics .
-
-ex:social_anthropology
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "social_anthropology" ;
-        rdfs:subClassOf  ex:anthropology .
-
-ex:comparative_anatomy
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "comparative_anatomy" ;
-        rdfs:subClassOf  ex:anatomy .
-
-ex:econometrics  a       owl:Class , rdfs:Class ;
-        rdfs:label       "econometrics" ;
-        rdfs:subClassOf  ex:economics .
-
-ex:protozoology  a       owl:Class , rdfs:Class ;
-        rdfs:label       "protozoology" ;
-        rdfs:subClassOf  ex:zoology .
-
-ex:matrix_algebra  a     owl:Class , rdfs:Class ;
-        rdfs:label       "matrix_algebra" ;
-        rdfs:subClassOf  ex:algebra .
-
-ex:bioclimatology  a     owl:Class , rdfs:Class ;
-        rdfs:label       "bioclimatology" ;
-        rdfs:subClassOf  ex:climatology .
-
-ex:geochemistry  a       owl:Class , rdfs:Class ;
-        rdfs:label       "geochemistry" ;
-        rdfs:subClassOf  ex:chemistry .
-
-ex:vertebrate_paleontology
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "vertebrate_paleontology" ;
-        rdfs:subClassOf  ex:paleontology .
-
-ex:curvilinear_correlation
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "curvilinear_correlation" ;
-        rdfs:subClassOf  ex:correlation .
-
-ex:prescriptive_linguistics
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "prescriptive_linguistics" ;
-        rdfs:subClassOf  ex:linguistics .
-
-ex:group_theory  a       owl:Class , rdfs:Class ;
-        rdfs:label       "group_theory" ;
-        rdfs:subClassOf  ex:algebra , ex:pure_mathematics , ex:mathematics .
-
-ex:applied_mathematics
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "applied_mathematics" ;
-        rdfs:subClassOf  ex:mathematics .
-
-ex:femtochemistry  a     owl:Class , rdfs:Class ;
-        rdfs:label       "femtochemistry" ;
-        rdfs:subClassOf  ex:chemistry .
-
-ex:affine_geometry  a    owl:Class , rdfs:Class ;
-        rdfs:label       "affine_geometry" ;
-        rdfs:subClassOf  ex:geometry .
-
-ex:psycholinguistics  a  owl:Class , rdfs:Class ;
-        rdfs:label       "psycholinguistics" ;
-        rdfs:subClassOf  ex:linguistics .
-
-ex:photochemistry  a     owl:Class , rdfs:Class ;
-        rdfs:label       "photochemistry" ;
-        rdfs:subClassOf  ex:chemistry .
-
-ex:differential_psychology
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "differential_psychology" ;
-        rdfs:subClassOf  ex:psychology .
-
-ex:surface_chemistry  a  owl:Class , rdfs:Class ;
-        rdfs:label       "surface_chemistry" ;
-        rdfs:subClassOf  ex:chemistry .
-
-ex:pharmacogenetics  a   owl:Class , rdfs:Class ;
-        rdfs:label       "pharmacogenetics" ;
-        rdfs:subClassOf  ex:genetics .
-
-ex:microbiology  a       owl:Class , rdfs:Class ;
-        rdfs:label       "microbiology" ;
-        rdfs:subClassOf  ex:biology .
-
-ex:paleozoology  a       owl:Class , rdfs:Class ;
-        rdfs:label       "paleozoology" ;
-        rdfs:subClassOf  ex:zoology .
-
-ex:microscopic_anatomy
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "microscopic_anatomy" ;
-        rdfs:subClassOf  ex:anatomy .
-
-ex:geopolitics  a        owl:Class , rdfs:Class ;
-        rdfs:label       "geopolitics" ;
-        rdfs:subClassOf  ex:politics .
-
-ex:ornithology  a        owl:Class , rdfs:Class ;
-        rdfs:label       "ornithology" ;
-        rdfs:subClassOf  ex:natural_history .
-
-ex:phonetics  a          owl:Class , rdfs:Class ;
-        rdfs:label       "phonetics" ;
-        rdfs:subClassOf  ex:linguistics .
-
-ex:social_psychology  a  owl:Class , rdfs:Class ;
-        rdfs:label       "social_psychology" ;
-        rdfs:subClassOf  ex:psychology .
-
-ex:historical_linguistics
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "historical_linguistics" ;
-        rdfs:subClassOf  ex:linguistics .
-
-ex:cognitive_semantics
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "cognitive_semantics" ;
-        rdfs:subClassOf  ex:semantics .
-
-ex:neurobiology  a       owl:Class , rdfs:Class ;
-        rdfs:label       "neurobiology" ;
-        rdfs:subClassOf  ex:biology .
-
-ex:macroeconomics  a     owl:Class , rdfs:Class ;
-        rdfs:label       "macroeconomics" ;
-        rdfs:subClassOf  ex:economics .
-
-ex:electrochemistry  a   owl:Class , rdfs:Class ;
-        rdfs:label       "electrochemistry" ;
-        rdfs:subClassOf  ex:chemistry .
-
-ex:radiochemistry  a     owl:Class , rdfs:Class ;
-        rdfs:label       "radiochemistry" ;
-        rdfs:subClassOf  ex:chemistry .
-
-ex:numerical_analysis
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "numerical_analysis" ;
-        rdfs:subClassOf  ex:mathematics .
-
-ex:exobiology  a         owl:Class , rdfs:Class ;
-        rdfs:label       "exobiology" ;
-        rdfs:subClassOf  ex:biology .
-
-ex:applied_psychology
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "applied_psychology" ;
-        rdfs:subClassOf  ex:psychology .
-
-ex:fluid_mechanics  a    owl:Class , rdfs:Class ;
-        rdfs:label       "fluid_mechanics" ;
-        rdfs:subClassOf  ex:mechanics .
-
-ex:cryobiology  a        owl:Class , rdfs:Class ;
-        rdfs:label       "cryobiology" ;
-        rdfs:subClassOf  ex:biology .
-
-ex:paleopathology  a     owl:Class , rdfs:Class ;
-        rdfs:label       "paleopathology" ;
-        rdfs:subClassOf  ex:pathology .
-
-ex:avionics  a           owl:Class , rdfs:Class ;
-        rdfs:label       "avionics" ;
-        rdfs:subClassOf  ex:electronics .
-
-ex:organic_chemistry  a  owl:Class , rdfs:Class ;
-        rdfs:label       "organic_chemistry" ;
-        rdfs:subClassOf  ex:chemistry .
-
-ex:cosmetic_dentistry
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "cosmetic_dentistry" ;
-        rdfs:subClassOf  ex:dentistry .
-
-ex:linear_algebra  a     owl:Class , rdfs:Class ;
-        rdfs:label       "linear_algebra" ;
-        rdfs:subClassOf  ex:algebra , ex:mathematics .
-
-ex:powder_metallurgy  a  owl:Class , rdfs:Class ;
-        rdfs:label       "powder_metallurgy" ;
-        rdfs:subClassOf  ex:metallurgy .
-
-ex:medical_science  a    owl:Class , rdfs:Class ;
-        rdfs:label       "medical_science" ;
-        rdfs:subClassOf  ex:science .
-
-ex:derivational_morphology
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "derivational_morphology" ;
-        rdfs:subClassOf  ex:morphology .
-
-ex:emergency_medicine
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "emergency_medicine" ;
-        rdfs:subClassOf  ex:medicine .
-
-ex:natural_science  a    owl:Class , rdfs:Class ;
-        rdfs:label       "natural_science" ;
-        rdfs:subClassOf  ex:science .
-
-ex:experimental_psychology
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "experimental_psychology" ;
-        rdfs:subClassOf  ex:psychology .
-
-ex:fourier_analysis  a   owl:Class , rdfs:Class ;
-        rdfs:label       "fourier_analysis" ;
-        rdfs:subClassOf  ex:analysis .
-
-ex:physical_geography
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "physical_geography" ;
-        rdfs:subClassOf  ex:geography .
-
-ex:biomedicine  a        owl:Class , rdfs:Class ;
-        rdfs:label       "biomedicine" ;
-        rdfs:subClassOf  ex:medicine .
-
-ex:probability_theory
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "probability_theory" ;
-        rdfs:subClassOf  ex:mathematics .
-
-ex:developmental_psychology
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "developmental_psychology" ;
-        rdfs:subClassOf  ex:psychology .
-
-ex:projective_geometry
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "projective_geometry" ;
-        rdfs:subClassOf  ex:geometry .
-
-ex:molecular_genetics
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "molecular_genetics" ;
-        rdfs:subClassOf  ex:genetics .
-
-ex:cognitive_science  a  owl:Class , rdfs:Class ;
-        rdfs:label       "cognitive_science" ;
-        rdfs:subClassOf  ex:science .
-
-ex:calculus_of_variations
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "calculus_of_variations" ;
-        rdfs:subClassOf  ex:calculus .
-
-ex:social_science  a     owl:Class , rdfs:Class ;
-        rdfs:label       "social_science" ;
-        rdfs:subClassOf  ex:science .
-
-ex:solid_state_physics
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "solid_state_physics" ;
-        rdfs:subClassOf  ex:physics .
-
-ex:compound_morphology
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "compound_morphology" ;
-        rdfs:subClassOf  ex:morphology .
-
-ex:thoracic_medicine  a  owl:Class , rdfs:Class ;
-        rdfs:label       "thoracic_medicine" ;
-        rdfs:subClassOf  ex:medicine .
-
-ex:marine_archeology  a  owl:Class , rdfs:Class ;
-        rdfs:label       "marine_archeology" ;
-        rdfs:subClassOf  ex:archeology .
-
-ex:forensic_medicine  a  owl:Class , rdfs:Class ;
-        rdfs:label       "forensic_medicine" ;
-        rdfs:subClassOf  ex:medicine .
-
-ex:analytic_geometry  a  owl:Class , rdfs:Class ;
-        rdfs:label       "analytic_geometry" ;
-        rdfs:subClassOf  ex:geometry .
-
-ex:computational_linguistics
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "computational_linguistics" ;
-        rdfs:subClassOf  ex:linguistics .
-
-ex:spherical_geometry
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "spherical_geometry" ;
-        rdfs:subClassOf  ex:geometry .
-
-ex:inflectional_morphology
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "inflectional_morphology" ;
-        rdfs:subClassOf  ex:morphology .
-
-ex:molecular_biology  a  owl:Class , rdfs:Class ;
-        rdfs:label       "molecular_biology" ;
-        rdfs:subClassOf  ex:biology .
-
-ex:nuclear_physics  a    owl:Class , rdfs:Class ;
-        rdfs:label       "nuclear_physics" ;
-        rdfs:subClassOf  ex:physics .
-
-ex:spherical_trigonometry
-        a                owl:Class , rdfs:Class ;
-        rdfs:label       "spherical_trigonometry" ;
-        rdfs:subClassOf  ex:trigonometry .
-
-ex:plane_geometry  a     owl:Class , rdfs:Class ;
-        rdfs:label       "plane_geometry" ;
-        rdfs:subClassOf  ex:geometry .
+        rdfs:label       "physical_environment" ;
+        rdfs:subClassOf  ex:environment .
+
+ex:noise_pollution  a    owl:Class , rdfs:Class ;
+        rdfs:label       "noise_pollution" ;
+        rdfs:subClassOf  ex:pollution .
+
+ex:black_sea  a          owl:Class , rdfs:Class ;
+        rdfs:label       "black_sea" ;
+        rdfs:subClassOf  ex:sea .
